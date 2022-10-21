@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <title>Gerador de Link - Whatsapp</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>
+          Gerador de Link para Whatsapp
+          <img src="assets/media/wpp-logo.svg" />
+        </h1>
+      </div>
+      <div class="input">
+        <div class="image">
+          <img src="assets/media/icon-phone.svg" />
+        </div>
+        <div class="elements">
+          <label
+            >Número do Celular:
+            <input placeholder="(DDD) 0 0000-0000" type="text" id="cellphone"
+          /></label>
+        </div>
+      </div>
+      <div class="input">
+        <div class="image">
+          <img src="assets/media/icon-msg.svg" />
+        </div>
+        <div class="elements">
+          <label>
+            Mensagem:
+            <input placeholder="Escreva o texto" type="text" id="message" />
+          </label>
+        </div>
+      </div>
+      <div class="button">
+        <button id="generate">Gerar Link</button>
+      </div>
+      <div class="result"></div>
+    </div>
+    <footer>&copy; Copyright - Leonardo Andrade</footer>
+  </body>
+  <script src="assets/js/script.js"></script>
+  <script src="https://unpkg.com/imask"></script>
+  <script>
+    IMask(document.getElementById("cellphone"), {
+      mask: "(00) 00000-0000",
+    });
+  </script>
+</html>

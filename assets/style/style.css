@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #555;
+}
+
+.container {
+  width: 500px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+.title {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title h1 {
+  font-size: 25px;
+}
+
+.title img {
+  max-width: 20px;
+  margin-left: 10px;
+}
+
+.input {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.image {
+  max-height: 30px;
+  margin-right: 10px;
+}
+
+.elements {
+  width: 90%;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+.input input {
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 15px 30px;
+  background-color: #555;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.result {
+  width: 90%;
+  height: 30%;
+  padding: 10px;
+  background-color: #ccc;
+  border-radius: 10px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.result h1 {
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+.result a {
+  font-size: 15px;
+  color: #000;
+}
+
+footer {
+  margin-top: 20px;
+  color: #000;
+  font-size: 15px;
+}
